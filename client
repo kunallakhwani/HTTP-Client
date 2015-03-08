@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ "$#" -lt 2 ];
+then
+echo "Invalid number of arguments."
+echo "usage: ./client <method> <URL>"
+echo "example: ./client GET http://www.google.com/"
+exit 1
+fi
+
+java -jar assn1p2.jar $1 $2
